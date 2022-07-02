@@ -46,7 +46,7 @@ const quiz = [
       correct: "novice"
     },
     {
-      question: "The projact manager of the research and development department has an obligation to keep the highly sensitive information.",
+      question: "The project manager of the research and development department has an obligation to keep the highly sensitive information _____.",
       answers: ["overwhelming", "innovative", "secure", "competitive"],
       correct: "secure"
     },
