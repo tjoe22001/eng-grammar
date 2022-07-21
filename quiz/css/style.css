@@ -130,18 +130,6 @@ footer p {
   padding-right: 5px;
 }
 
-.menuBox {
-  margin: 0 auto;
-  max-width: 100%;
-  padding: 30px;
-
-}
-
-@media screen and (max-width: 768px) {
-  .menuBox {
-    max-width: 300px;
-  }
-}
 
 /* 更新情報 */
 dl{
