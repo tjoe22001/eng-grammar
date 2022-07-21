@@ -19,7 +19,6 @@ body {
 }
 
 h1 {
-  border-bottom: 1px solid #454545;
   font-size: calc(1em + 20px);
   padding: 20px 0 5px;
   text-align: center;
@@ -61,89 +60,43 @@ ul li {
   }
 }
 
-.footerFixed {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  min-height: 100vh;
-  padding-bottom: 80px;
-  position: relative;
-  text-align: center;
+#footer {
+  padding-bottom: 10px;
 }
 
-footer {
-  background: #40e0d0;
-  bottom: 0;
-  padding: 10px 0;
-  position: absolute;
+footer p {
   text-align: center;
-  width: 100vw;
 }
 
 /*-------------------
 扉ページ
 -------------------*/
-#index h1 {
-  padding: 100px 0 10px 0;
+/* メインページのCSS */
+/* 表紙画像 */
+.top_title {
   position: relative;
 }
 
-#index h1::before {
-  background-image: url(../img/dog1_smile.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: '';
-  height: 120px;
-  left: calc(50% - 250px);
+.top_title h1 {
   position: absolute;
-  top: 30px;
-  width: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: black;
+  text-align: left;
 }
 
-@media screen and (max-width: 768px) {
-  #index h1::before {
-    height: 80px;
-    left: 0;
-    width: 80px;
-  }
+.picture {
+  float: right;
 }
 
-#index h1::after {
-  background-image: url(../img/teacher_english_man_casual.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: '';
-  height: 120px;
-  position: absolute;
-  right: calc(50% - 250px);
-  top: 30px;
-  width: 120px;
-}
-
-@media screen and (max-width: 768px) {
-  #index h1::after {
-    height: 80px;
-    right: 0;
-    width: 80px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #index .bubble {
-    font-size: 14px;
-  }
-}
 
 #index .btn {
   background: #033241;
   border: none;
   border-radius: 15px;
   text-align: center;
-}
-
-#index p.box {
-  line-height: 1.7;
 }
 
 #index .lead {
@@ -189,6 +142,33 @@ footer {
     max-width: 300px;
   }
 }
+
+/* 更新情報 */
+dl{
+  background:#eee;
+  padding:10px;
+  width: 100%;
+}
+
+dt{
+  color:navy;
+  font-weight:bold;
+  padding:0 10px 0 0;
+  width:120px;
+  float:left;
+  margin-bottom:7px;
+}
+
+dd{
+  color:#333;
+  margin-bottom:7px;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+
+
+
 
 
 /*-------------------
